@@ -1,0 +1,63 @@
+div.nav-bar {
+    background-color: rgb(231, 231, 231);
+    overflow: hidden;
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.nav-bar a {
+    color: black;
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+div.nav-bar a:hover {
+    background-color: teal;
+    color: white;
+}
+
+div.nav-bar a.active {
+    background-color: teal;
+    color: white;
+}
+
+div.content-container {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+
+
+h1 {
+    text-align: center;
+    font-family: 'Train One';
+    font-size: 50px;
+}
+
+
+.teaser-image {
+    width: 32.9%;
+    height: 329px;
+    object-fit: cover;
+    border-radius: 50%;
+    float: left;
+    padding: 0.2%;
+}
+
+@media only screen and (max-width: 1000px) {
+    .nav-bar {
+        flex-direction: column;
+    }
+
+    .content-container {
+        width: calc(100% - 2en);
+        padding: len;
+    }
+}
