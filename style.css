@@ -30,10 +30,24 @@ div.content-container {
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+div.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
+#header_text {
+    display: flex;
+    flex-direction: column;
+}
+
+div.content p {
+    padding: 2%;
+    line-height: 140%;
+}
 
 h1 {
     text-align: center;
@@ -41,15 +55,21 @@ h1 {
     font-size: 50px;
 }
 
+h2 {
+    padding: 2%;
+}
+
 
 .teaser-image {
-    width: 32.9%;
-    height: 329px;
+    width: 350px;
+    height: 350px;
+    max-width: 100%;
+    max-height: auto;
+    padding: 1%;
     object-fit: cover;
     border-radius: 50%;
-    float: left;
-    padding: 0.2%;
 }
+
 
 @media only screen and (max-width: 1000px) {
     .nav-bar {
